@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./trains.db"
+}
+
+model SearchHistory {
+  id            String   @id @default(cuid())
+  fromLocation  String
+  toLocation    String
+  searchDate    DateTime @default(now())
+  resultsCount  Int      @default(0)
+}
+
+model TrainCache {
+  trainNo       String   @id
+  trainName     String
+  source        String
+  destination   String
+  departureTime String // Stored as HH:mm
+  arrivalTime   String // Stored as HH:mm
+  daysOfRun     String // e.g., "Mon,Tue,Wed"
+  updatedAt     DateTime @updatedAt
+}
+
+model PNRStatus {
+    pnr         String @id
+    status      String // CNF, RAC, WL
+    bookingDate DateTime @default(now())
+    trainNo     String
+}
