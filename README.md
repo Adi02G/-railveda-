@@ -1,22 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚆 RailVeda
 
-## Getting Started
+RailVeda is a railway-themed web project designed to provide a simple and user-friendly platform for railway-related information and services. 🛤️
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Clean railway-themed UI
+-  Easy navigation
+-  Responsive design
+-  Train/station information support
+-  Beginner-friendly project structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-  HTML
+-  CSS
+-  JavaScript
+
+## ⚙️ Installation
+
+1. Clone the Repository
+
+    git clone https://github.com/Adi02G/-railveda-.git
+   
+3. Open the Project Folder
+   
+   cd -railveda-
+5. Open in VS Code
+   
+   code .
+
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
